@@ -1,4 +1,4 @@
-package game;
+ï»¿package game;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -10,7 +10,7 @@ public class snakeWin extends JPanel implements ActionListener,KeyListener,Runna
 	int rx=0,ry=0;
 	int eat1=0,eat2=0;
 	JDialog dialog = new JDialog();
-	JLabel label = new JLabel("Äã¹ÒÁË£¡ÄãµÄ·ÖÊıÊÇ"+fenShu+"¡£");
+	JLabel label = new JLabel("ä½ æŒ‚äº†ï¼ä½ çš„åˆ†æ•°æ˜¯"+fenShu+"ã€‚");
 	JButton ok = new JButton("T_T");
 	Random r = new Random();
 	JButton newGame,stopGame;
@@ -18,8 +18,8 @@ public class snakeWin extends JPanel implements ActionListener,KeyListener,Runna
 	int temp=0;
 	Thread nThread;
 	public snakeWin() {
-		newGame = new JButton("¿ªÊ¼");
-		stopGame = new JButton("½áÊø");
+		newGame = new JButton("å¼€å§‹");
+		stopGame = new JButton("ç»“æŸ");
 		newGame.addActionListener(this);
 		stopGame.addActionListener(this);
 		this.addKeyListener(this);
@@ -37,8 +37,8 @@ public class snakeWin extends JPanel implements ActionListener,KeyListener,Runna
 	public void paintComponent(Graphics g){
 		super.paintComponent(g);
 		g.drawRect(10, 40, 400, 300);
-		g.drawString("·ÖÊı£º"+fenShu, 150, 15);
-		g.drawString("ËÙ¶È£º"+Speed, 150, 35);
+		g.drawString("åˆ†æ•°ï¼š"+fenShu, 150, 15);
+		g.drawString("é€Ÿåº¦ï¼š"+Speed, 150, 35);
 		g.setColor(new Color(0, 255, 0));
 		if(start){
 			g.fillRect(10+rx*10, 40+ry*10, 10, 10);
@@ -113,7 +113,7 @@ public class snakeWin extends JPanel implements ActionListener,KeyListener,Runna
 			repaint();
 		}else {
 			nThread = null;
-			label.setText("Äã¹ÒÁË£¡ÄãµÄ·ÖÊıÊÇ"+fenShu+"¡£");
+			label.setText("ä½ æŒ‚äº†ï¼ä½ çš„åˆ†æ•°æ˜¯"+fenShu+"ã€‚");
 			dialog.setVisible(true);
 		}
 		
@@ -184,7 +184,7 @@ public class snakeWin extends JPanel implements ActionListener,KeyListener,Runna
 			try {
 				Thread.sleep(300-30*Speed);
 			} catch (InterruptedException e) {
-				// TODO ×Ô¶¯Éú³ÉµÄ catch ¿é
+				// TODO è‡ªåŠ¨ç”Ÿæˆçš„ catch å—
 				e.printStackTrace();
 			}
 		}

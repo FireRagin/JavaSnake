@@ -1,4 +1,4 @@
-package game;
+﻿package game;
 public class snakeAct {
 	private int x;
 	private int y;

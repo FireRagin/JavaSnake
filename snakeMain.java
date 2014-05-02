@@ -6,7 +6,7 @@ public class snakeMain extends JFrame {
 	public snakeMain() {
 		snakeWin win = new snakeWin();
 		add(win);
-		setTitle("Ì°³ÔÉß1.0v------By FireRagin");
+		setTitle("Ì°è´ªåƒè›‡v1.0------By FireRagin");
 		setSize(435,390);
 		setLocation(200, 200);
 		setVisible(true);
